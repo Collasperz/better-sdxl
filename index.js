@@ -10,7 +10,7 @@ app.post('/api/image', function (req, res) {
   
   ws.on("open", function () {
       ws.send(JSON.stringify({"fn_index":0,"session_hash":"zev6i7enjee"}))
-      ws.send(JSON.stringify({"data":[body.prompt, body.neg,"sd_xl_base_1.0.safetensors [be9edd61]",body.steps,"DPM++ 2M Karras",body.cfg,1024,1024,body.seed],"event_data":null,"fn_index":0,"session_hash":"zev6i7enjee"}))
+      ws.send(JSON.stringify({"data":[body.prompt, body.neg,"sd_xl_base_1.0.safetensors [be9edd61]",body.steps,"DPM++ 2S a Karras",body.cfg,1024,1024,body.seed],"event_data":null,"fn_index":0,"session_hash":"zev6i7enjee"}))
   })
   ws.on("message", function (data) {
         ws_res = JSON.parse(data)
